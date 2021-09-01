@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "start": "next start -p 9000",
+    "deploy": "git add . && git commit -m zmiana && git push origin main"
   },
   "dependencies": {
     "@material-ui/core": "^4.12.3",

@@ -4,7 +4,7 @@ const cors = require("cors");
 require("dotenv/config");
 
 const app = express();
-const port = 4000;
+const port = 10000;
 
 const corsOptions = {
   origin: ["http://localhost:3000", "https://cumshutter.com"],

@@ -43,7 +43,7 @@ router.get("/", async (req, res) => {
   file +=
     '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">';
   file += "\n\t<url>";
-  file += "\n\t\t<loc>https://cumshutter.com/</loc>";
+  file += "\n\t\t<loc>https://my18videos.com/</loc>";
   file += `\n\t\t<lastmod>${yyyy}-${mm}-${dd}T${hours}:${minutes}:${seconds}+02:00</lastmod>`;
   file += "\n\t\t<priority>1.00</priority>";
   file += "\n\t</url>";
@@ -52,7 +52,7 @@ router.get("/", async (req, res) => {
   const getCategory = await categoryModel.find();
   getCategory.forEach((c) => {
     file += "\n\t<url>";
-    file += `\n\t\t<loc>https://cumshutter.com/category/${c.url}/</loc>`;
+    file += `\n\t\t<loc>https://my18videos.com/category/${c.url}/</loc>`;
     file += `\n\t\t<lastmod>${yyyy}-${mm}-${dd}T${hours}:${minutes}:${seconds}+02:00</lastmod>`;
     file += "\n\t\t<priority>0.50</priority>";
     file += "\n\t</url>";
@@ -92,7 +92,7 @@ router.get("/", async (req, res) => {
     }
 
     file += "\n\t<url>";
-    file += `\n\t\t<loc>https://cumshutter.com/video/${v.id}/${nameConvert}/</loc>`;
+    file += `\n\t\t<loc>https://my18videos.com/video/${v.id}/${nameConvert}/</loc>`;
     file += `\n\t\t<lastmod>${yyyy}-${mm}-${dd}T${hours}:${minutes}:${seconds}+02:00</lastmod>`;
     file += "\n\t\t<priority>0.50</priority>";
     file += "\n\t</url>";

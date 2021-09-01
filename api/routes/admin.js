@@ -9,9 +9,12 @@ router.post("/addVideo", async (req, res) => {
   let tags = data.tag;
 
   const videoID = (await videoModel.countDocuments()) + 1;
+  console.log(tags);
 
   tags.map((m, index) => {
     tags[index] = tags[index].replace(/-/g, "");
+    tags[index] = tags[index].replace(/ /g, "");
+    tags[index] = tags[index].toLowerCase();
   });
 
   for await (const m of data.tag) {
@@ -71,7 +74,6 @@ router.post("/getChoose", async (req, res) => {
         findedTags.push(r);
       } else {
         r = await choosePornhub(websiteName, i.id);
-        console.log(r);
         findedTags.push(r);
       }
     })
@@ -81,7 +83,6 @@ router.post("/getChoose", async (req, res) => {
 
 function choosePornhub(websiteName, videoID) {
   const buildUrl = `https://www.${websiteName}.com/view_video.php?viewkey=${videoID}/`;
-  console.log(buildUrl);
   const myPromise = new Promise((resolve, reject) => {
     request(
       {
@@ -147,7 +148,7 @@ function xvideosFinder(websiteName, category) {
   //https://www.xvideos.com/embedframe/2564033
 
   const randomPage = Math.floor(Math.random() * 100) + 1;
-  console.log(randomPage);
+
   const buildUrl = `https://www.${websiteName}.com${category}/${randomPage}`;
 
   const myPromise = new Promise((resolve, reject) => {
@@ -191,7 +192,7 @@ function xvideosFinder(websiteName, category) {
 
 function pornhubFinder(websiteName, category) {
   const randomPage = Math.floor(Math.random() * 100) + 1;
-  console.log(randomPage);
+
   const buildUrl = `https://www.${websiteName}.com/video?${category}&page=${randomPage}`;
 
   const myPromise = new Promise((resolve, reject) => {

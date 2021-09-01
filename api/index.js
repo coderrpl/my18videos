@@ -7,7 +7,7 @@ const app = express();
 const port = 10000;
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://cumshutter.com"],
+  origin: ["http://localhost:3000", "https://my18videos.com"],
 };
 
 app.use(cors(corsOptions));

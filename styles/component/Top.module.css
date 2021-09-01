@@ -13,3 +13,8 @@
 .content > img {
   height: 30px;
 }
+
+.content > a {
+  display: flex;
+  align-items: center;
+}

@@ -38,13 +38,10 @@ function Admin() {
   };
 
   const submitChoose = async () => {
-    const getChoose = await axios.post(
-      "http://localhost:4000/admin/getChoose",
-      {
-        data: videoChoose,
-        website: source,
-      }
-    );
+    const getChoose = await axios.post(`${process.env.HOST}/admin/getChoose`, {
+      data: videoChoose,
+      website: source,
+    });
     if (getChoose) {
       let videoData = [];
       getChoose.data.forEach((m, index) => {

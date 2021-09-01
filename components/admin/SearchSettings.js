@@ -37,7 +37,7 @@ function SearchSettings({
   const searchHandler = () => {
     axios
       .get(
-        `http://localhost:4000/admin/videoFinder?website=${source}&category=${webCategory[source][category].url}`
+        `${process.env.HOST}/admin/videoFinder?website=${source}&category=${webCategory[source][category].url}`
       )
       .then((response) => {
         videosChange(response.data);

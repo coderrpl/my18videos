@@ -55,7 +55,7 @@ function VideoForm({ data, fn, category }) {
 
     try {
       const videoUpload = await axios.post(
-        "http://localhost:4000/admin/addVideo",
+        `${process.env.HOST}/admin/addVideo`,
         {
           category,
           name: data.title,

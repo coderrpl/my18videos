@@ -1,80 +1,64 @@
 const webCategory = {
   pornhub: [
     {
+      category: "milf",
       name: "MILF",
       url: "c=29",
     },
     {
-      name: "Duze cycki",
+      category: "big-tits",
+      name: "Big Tits",
       url: "c=8",
     },
     {
+      category: "anal",
       name: "Anal",
       url: "c=35",
     },
     {
-      name: "Duzy tyłek",
+      category: "big-ass",
+      name: "Big Ass",
       url: "c=4",
     },
     {
-      name: "Duzy penis",
+      category: "big-cock",
+      name: "Big Cock",
       url: "c=7",
     },
     {
-      name: "Blondynki",
+      category: "blonde",
+      name: "Blonde",
       url: "c=9",
     },
     {
-      name: "Seks oralny",
+      category: "blowjob",
+      name: "Blowjob",
       url: "c=13",
     },
     {
-      name: "Brazylijki",
-      url: "c=102",
-    },
-    {
-      name: "Brunetki",
+      category: "brunette",
+      name: "Brunette",
       url: "c=11",
     },
     {
-      name: "Kompilacje",
+      category: "compilation",
+      name: "Compilation",
       url: "c=57",
     },
     {
-      name: "Wytryski",
+      category: "cumshot",
+      name: "Cumshot",
       url: "c=16",
     },
     {
-      name: "Wytrysk w środku",
+      category: "creampie",
+      name: "Creampie",
       url: "c=15",
     },
     {
-      name: "Rękodzieło",
-      url: "c=20",
-    },
-    {
-      name: "Latynoski",
+      category: "latina",
+      name: "Latina",
       url: "c=26",
-    },
-    {
-      name: "Masaz",
-      url: "c=78",
-    },
-    {
-      name: "Masturbacja",
-      url: "c=22",
-    },
-    {
-      name: "W miejscu publicznym",
-      url: "c=24",
-    },
-    {
-      name: "Striptiz",
-      url: "c=33",
-    },
-    {
-      name: "Trójkąt",
-      url: "c=65",
     },
   ],
   xvideos: [

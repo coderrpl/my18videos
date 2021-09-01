@@ -4,6 +4,7 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #141b21;
 }
 
 a {
@@ -12,5 +13,57 @@ a {
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+.App_content {
+  display: flex;
+}
+
+.MuiPaginationItem-root {
+  color: #fff !important;
+  border-color: #fff !important;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.MuiPaginationItem-page.Mui-selected {
+  background-color: #526f88 !important;
+  border-color: #526f88 !important;
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border-color: #fff !important;
+  color: #fff !important;
+}
+
+.MuiInputBase-input {
+  color: #fff !important;
+}
+
+.MuiFormLabel-root {
+  color: #fff !important;
+}
+
+.MuiFormControl-root {
+  color: #fff !important;
+  width: 100% !important;
+}
+
+.MuiFormControl-root select {
+  background-color: #171717 !important;
+  color: #fff !important;
+  width: 100% !important;
+}
+
+.video_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(197px, 1fr));
+  grid-gap: 15px !important;
 }

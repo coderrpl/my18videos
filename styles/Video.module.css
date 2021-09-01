@@ -1,0 +1,54 @@
+.content {
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.content > h1 {
+  color: #fff;
+  margin: 10px 0px;
+  font-size: 20px;
+}
+
+.frame {
+  position: relative;
+  padding-bottom: 56.25%; /*16:9*/
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.frame iframe,
+.frame object,
+.frame embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.chip {
+  margin-right: 5px !important;
+  margin-top: 10px !important;
+  color: #fff !important;
+  background-color: #263440 !important;
+  border-radius: 5px !important;
+}
+
+.chip:hover {
+  background-color: #394e60 !important;
+}
+
+.video_items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(197px, 1fr));
+  grid-gap: 15px !important;
+}
+
+.content > h2 {
+  margin-top: 35px;
+  margin-bottom: 10px;
+  color: #fff;
+  font-size: 23px;
+}

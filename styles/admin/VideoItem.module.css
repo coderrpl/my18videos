@@ -1,0 +1,17 @@
+.content {
+  text-decoration: none;
+}
+
+.photo {
+  width: 100%;
+  padding-bottom: 70%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title {
+  margin-top: 5px;
+  color: #ad89fc;
+  font-size: 14px;
+}

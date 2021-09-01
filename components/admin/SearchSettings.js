@@ -79,7 +79,9 @@ function SearchSettings({
         >
           {source &&
             webCategory[source].map((m, index) => (
-              <MenuItem value={index}>{m.name}</MenuItem>
+              <MenuItem key={index} value={index}>
+                {m.name}
+              </MenuItem>
             ))}
         </Select>
       </FormControl>

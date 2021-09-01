@@ -40,7 +40,7 @@ function VideoForm({ data, fn, category }) {
   const [added, addedChange] = useState(false);
   const [chipData, setChipData] = useState([]);
 
-  useEffect(async () => {
+  useEffect(() => {
     if (data.tags) {
       setChipData(data.tags);
     }
@@ -78,10 +78,11 @@ function VideoForm({ data, fn, category }) {
         <img onClick={() => fn(data.url)} src={data.image} alt="" />
       </div>
       <h5 style={{ color: "#ad89fc" }}>{data.title}</h5>
-      <form autocomplete="off">
+      <form autoComplete="off">
         <Paper component="ul" className={classes.paper}>
           {chipData.map((data, index) => (
             <Chip
+              key={index}
               label={data}
               onDelete={handleDelete(data)}
               className={classes.chip}

@@ -9,17 +9,21 @@ function MyApp({ Component, pageProps }) {
   const [menu, menuChange] = useState([]);
   const router = useRouter();
 
-  useEffect(async () => {
-    let menuData = [];
-    const menu = await axios.get(`${process.env.HOST}/categories`);
-    menu.data.forEach((v) => {
-      menuData.push({
-        name: v.name,
-        count: v.count,
-        url: v.url,
+  useEffect(() => {
+    const fn = async () => {
+      let menuData = [];
+      const menu = await axios.get(`${process.env.HOST}/categories`);
+      menu.data.forEach((v) => {
+        menuData.push({
+          name: v.name,
+          count: v.count,
+          url: v.url,
+        });
       });
-    });
-    menuChange(menuData);
+      menuChange(menuData);
+    };
+
+    fn();
   }, []);
   return (
     <div className="App">

@@ -43,7 +43,7 @@ function Video({ id, name, src, tags, videos }) {
           width="510"
           height="400"
           scrolling="no"
-          allowfullscreen="allowfullscreen"
+          allowFullScreen="allowfullscreen"
         />
       </div>
       <h1>{name}</h1>
@@ -62,8 +62,8 @@ function Video({ id, name, src, tags, videos }) {
       </div>
       <h2>Similar videos</h2>
       <div className={style.video_items}>
-        {videos.map((m) => (
-          <VideoItem data={m} />
+        {videos.map((m, index) => (
+          <VideoItem key={index} data={m} />
         ))}
       </div>
     </div>
